@@ -1,0 +1,414 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\Backup\FFT_DMA\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_axi_stream_generator_0_wrapper_xst.prj"
+Verilog Include Directory          : {"D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\Backup\FFT_DMA\pcores\" "C:\Xilinx\14.4\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc7z020clg484-1
+Output File Name                   : "../implementation/system_axi_stream_generator_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_axi_stream_generator_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/pcores/axi_stream_generator_v1_00_a/hdl/verilog/xfft_v8_0.v" into library axi_stream_generator_v1_00_a
+Parsing module <xfft_v8_0>.
+Analyzing Verilog file "D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/pcores/axi_stream_generator_v1_00_a/hdl/verilog/axi_stream_generator.v" into library axi_stream_generator_v1_00_a
+Parsing module <axi_stream_generator>.
+Analyzing Verilog file "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\Backup\FFT_DMA\hdl\system_axi_stream_generator_0_wrapper.v" into library work
+Parsing module <system_axi_stream_generator_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <system_axi_stream_generator_0_wrapper>.
+
+Elaborating module <axi_stream_generator>.
+
+Elaborating module <xfft_v8_0>.
+WARNING:HDLCompiler:1127 - "D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/pcores/axi_stream_generator_v1_00_a/hdl/verilog/axi_stream_generator.v" Line 162: Assignment to s_axis_config_tready ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/pcores/axi_stream_generator_v1_00_a/hdl/verilog/axi_stream_generator.v" Line 166: Assignment to event_frame_started ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/pcores/axi_stream_generator_v1_00_a/hdl/verilog/axi_stream_generator.v" Line 167: Assignment to event_tlast_unexpected ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/pcores/axi_stream_generator_v1_00_a/hdl/verilog/axi_stream_generator.v" Line 168: Assignment to event_tlast_missing ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/pcores/axi_stream_generator_v1_00_a/hdl/verilog/axi_stream_generator.v" Line 169: Assignment to event_status_channel_halt ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/pcores/axi_stream_generator_v1_00_a/hdl/verilog/axi_stream_generator.v" Line 170: Assignment to event_data_in_channel_halt ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/pcores/axi_stream_generator_v1_00_a/hdl/verilog/axi_stream_generator.v" Line 171: Assignment to event_data_out_channel_halt ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_axi_stream_generator_0_wrapper>.
+    Related source file is "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\Backup\FFT_DMA\hdl\system_axi_stream_generator_0_wrapper.v".
+    Summary:
+	no macro.
+Unit <system_axi_stream_generator_0_wrapper> synthesized.
+
+Synthesizing Unit <axi_stream_generator>.
+    Related source file is "D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/pcores/axi_stream_generator_v1_00_a/hdl/verilog/axi_stream_generator.v".
+INFO:Xst:3210 - "D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/pcores/axi_stream_generator_v1_00_a/hdl/verilog/axi_stream_generator.v" line 155: Output port <s_axis_config_tready> of the instance <xfft_v8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/pcores/axi_stream_generator_v1_00_a/hdl/verilog/axi_stream_generator.v" line 155: Output port <event_frame_started> of the instance <xfft_v8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/pcores/axi_stream_generator_v1_00_a/hdl/verilog/axi_stream_generator.v" line 155: Output port <event_tlast_unexpected> of the instance <xfft_v8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/pcores/axi_stream_generator_v1_00_a/hdl/verilog/axi_stream_generator.v" line 155: Output port <event_tlast_missing> of the instance <xfft_v8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/pcores/axi_stream_generator_v1_00_a/hdl/verilog/axi_stream_generator.v" line 155: Output port <event_status_channel_halt> of the instance <xfft_v8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/pcores/axi_stream_generator_v1_00_a/hdl/verilog/axi_stream_generator.v" line 155: Output port <event_data_in_channel_halt> of the instance <xfft_v8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/pcores/axi_stream_generator_v1_00_a/hdl/verilog/axi_stream_generator.v" line 155: Output port <event_data_out_channel_halt> of the instance <xfft_v8> is unconnected or connected to loadless signal.
+    Found 24-bit subtractor for signal <m_axis_data_tdata[23]_unary_minus_2_OUT> created at line 150.
+    Found 24-bit subtractor for signal <m_axis_data_tdata[47]_unary_minus_4_OUT> created at line 151.
+    Found 32-bit adder for signal <mag_data> created at line 152.
+    Found 24x24-bit multiplier for signal <n0016> created at line 152.
+    Found 24x24-bit multiplier for signal <n0017> created at line 152.
+    Summary:
+	inferred   2 Multiplier(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+Unit <axi_stream_generator> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 2
+ 24x24-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 3
+ 24-bit subtractor                                     : 2
+ 32-bit adder                                          : 1
+# Multiplexers                                         : 2
+ 24-bit 2-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../implementation/xfft_v8_0.ngc>.
+Reading Secure Unit <blk00000001>.
+Loading core <xfft_v8_0> for timing and area information for instance <xfft_v8>.
+INFO:Xst:1901 - Instance blk000007cc in unit blk000007cc of type DSP48E has been replaced by DSP48E1
+INFO:Xst:1901 - Instance blk000007cd in unit blk000007cd of type DSP48E has been replaced by DSP48E1
+INFO:Xst:1901 - Instance blk000007ce in unit blk000007ce of type DSP48E has been replaced by DSP48E1
+INFO:Xst:1901 - Instance blk000007cf in unit blk000007cf of type DSP48E has been replaced by DSP48E1
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 2
+ 24x24-bit multiplier                                  : 2
+# Adders/Subtractors                                   : 3
+ 24-bit subtractor                                     : 2
+ 32-bit adder                                          : 1
+# Multiplexers                                         : 2
+ 24-bit 2-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system_axi_stream_generator_0_wrapper> ...
+
+Optimizing unit <axi_stream_generator> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_axi_stream_generator_0_wrapper, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_axi_stream_generator_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 287
+#      GND                         : 1
+#      INV                         : 48
+#      LUT2                        : 34
+#      LUT3                        : 46
+#      MUXCY                       : 77
+#      VCC                         : 1
+#      XORCY                       : 80
+# DSPs                             : 4
+#      DSP48E1                     : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                  128  out of  53200     0%  
+    Number used as Logic:               128  out of  53200     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    128
+   Number with an unused Flip Flop:     128  out of    128   100%  
+   Number with an unused LUT:             0  out of    128     0%  
+   Number of fully used LUT-FF pairs:     0  out of    128     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                          72
+ Number of bonded IOBs:                   0  out of    200     0%  
+
+Specific Feature Utilization:
+ Number of DSP48E1s:                      4  out of    220     1%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                       | Load  |
+-----------------------------------+-------------------------------------------------------------+-------+
+ACLK                               | NONE(axi_stream_generator_0/xfft_v8/blk00000001/blk00000004)| 1401  |
+-----------------------------------+-------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 2.388ns (Maximum Frequency: 418.694MHz)
+   Minimum input arrival time before clock: 0.894ns
+   Maximum output required time after clock: 9.464ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ACLK'
+  Clock period: 2.388ns (frequency: 418.694MHz)
+  Total number of paths / destination ports: 6662 / 3802
+-------------------------------------------------------------------------
+Delay:               2.388ns (Levels of Logic = 8)
+  Source:            sec_inst (FF)
+  Destination:       sec_inst (FF)
+  Source Clock:      ACLK rising
+  Destination Clock: ACLK rising
+
+  Data Path: sec_inst to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out           45   0.282   0.880  sec_inst (sec_net)
+     SEC:in->out           7   0.053   0.453  sec_inst (sec_net)
+     SEC:in->out           1   0.053   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.291   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           0   0.015   0.000  sec_inst (sec_net)
+     SEC:in->out           1   0.320   0.000  sec_inst (sec_net)
+     SEC:in                    0.011          sec_inst
+    ----------------------------------------
+    Total                      2.388ns (1.055ns logic, 1.333ns route)
+                                       (44.2% logic, 55.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ACLK'
+  Total number of paths / destination ports: 105 / 95
+-------------------------------------------------------------------------
+Offset:              0.894ns (Levels of Logic = 3)
+  Source:            M_AXIS_TREADY (PAD)
+  Destination:       sec_inst (FF)
+  Destination Clock: ACLK rising
+
+  Data Path: M_AXIS_TREADY to sec_inst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'axi_stream_generator_0/xfft_v8:m_axis_data_tready'
+     begin scope: 'axi_stream_generator_0/xfft_v8/blk00000001:m_axis_data_tready'
+     SEC:in->out          49   0.053   0.555  sec_inst (sec_net)
+     SEC:in                    0.200          sec_inst
+    ----------------------------------------
+    Total                      0.894ns (0.339ns logic, 0.555ns route)
+                                       (37.9% logic, 62.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ACLK'
+  Total number of paths / destination ports: 9662496 / 35
+-------------------------------------------------------------------------
+Offset:              9.464ns (Levels of Logic = 46)
+  Source:            sec_inst (FF)
+  Destination:       M_AXIS_TDATA<31> (PAD)
+  Source Clock:      ACLK rising
+
+  Data Path: sec_inst to M_AXIS_TDATA<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SEC:C->out            2   0.282   0.405  sec_inst (sec_net)
+     end scope: 'axi_stream_generator_0/xfft_v8/blk00000001:m_axis_data_tdata<0>'
+     end scope: 'axi_stream_generator_0/xfft_v8:m_axis_data_tdata<0>'
+     INV:I->O              1   0.067   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_lut<0>_INV_0 (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_lut<0>)
+     MUXCY:S->O            1   0.291   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<0> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<0>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<1> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<2> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<3> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<3>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<4> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<4>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<5> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<5>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<6> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<6>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<7> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<7>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<8> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<8>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<9> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<9>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<10> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<10>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<11> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<11>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<12> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<12>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<13> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<13>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<14> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<14>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<15> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<15>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<16> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<16>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<17> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<17>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<18> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<18>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<19> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<19>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<20> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<20>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<21> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<21>)
+     MUXCY:CI->O           0   0.015   0.000  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<22> (axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_cy<22>)
+     XORCY:CI->O           1   0.320   0.413  axi_stream_generator_0/Msub_m_axis_data_tdata[23]_unary_minus_2_OUT_xor<23> (axi_stream_generator_0/m_axis_data_tdata[23]_unary_minus_2_OUT<23>)
+     LUT2:I1->O            2   0.053   0.405  axi_stream_generator_0/Mmux_xk_re_abs161 (axi_stream_generator_0/xk_re_abs<23>)
+     DSP48E1:A23->PCOUT47    1   4.036   0.000  axi_stream_generator_0/Mmult_n0016 (axi_stream_generator_0/Mmult_n0016_PCOUT_to_Mmult_n00161_PCIN_47)
+     DSP48E1:PCIN47->P0    1   1.518   0.485  axi_stream_generator_0/Mmult_n00161 (axi_stream_generator_0/n0016<17>)
+     LUT2:I0->O            1   0.053   0.000  axi_stream_generator_0/Madd_mag_data_lut<17> (axi_stream_generator_0/Madd_mag_data_lut<17>)
+     MUXCY:S->O            1   0.291   0.000  axi_stream_generator_0/Madd_mag_data_cy<17> (axi_stream_generator_0/Madd_mag_data_cy<17>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Madd_mag_data_cy<18> (axi_stream_generator_0/Madd_mag_data_cy<18>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Madd_mag_data_cy<19> (axi_stream_generator_0/Madd_mag_data_cy<19>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Madd_mag_data_cy<20> (axi_stream_generator_0/Madd_mag_data_cy<20>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Madd_mag_data_cy<21> (axi_stream_generator_0/Madd_mag_data_cy<21>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Madd_mag_data_cy<22> (axi_stream_generator_0/Madd_mag_data_cy<22>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Madd_mag_data_cy<23> (axi_stream_generator_0/Madd_mag_data_cy<23>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Madd_mag_data_cy<24> (axi_stream_generator_0/Madd_mag_data_cy<24>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Madd_mag_data_cy<25> (axi_stream_generator_0/Madd_mag_data_cy<25>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Madd_mag_data_cy<26> (axi_stream_generator_0/Madd_mag_data_cy<26>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Madd_mag_data_cy<27> (axi_stream_generator_0/Madd_mag_data_cy<27>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Madd_mag_data_cy<28> (axi_stream_generator_0/Madd_mag_data_cy<28>)
+     MUXCY:CI->O           1   0.015   0.000  axi_stream_generator_0/Madd_mag_data_cy<29> (axi_stream_generator_0/Madd_mag_data_cy<29>)
+     MUXCY:CI->O           0   0.015   0.000  axi_stream_generator_0/Madd_mag_data_cy<30> (axi_stream_generator_0/Madd_mag_data_cy<30>)
+     XORCY:CI->O           0   0.320   0.000  axi_stream_generator_0/Madd_mag_data_xor<31> (M_AXIS_TDATA<31>)
+    ----------------------------------------
+    Total                      9.464ns (7.756ns logic, 1.708ns route)
+                                       (82.0% logic, 18.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock ACLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ACLK           |    2.388|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 16.04 secs
+ 
+--> 
+
+Total memory usage is 424052 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :   12 (   0 filtered)
+

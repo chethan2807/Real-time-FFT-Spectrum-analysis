@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="22" version="2.0">
+<workbenchAdvisor/>
+<window height="728" maximized="true" width="1024" x="26" y="0">
+<fastViewData fastViewLocation="1024"/>
+<intro standby="true"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout locked="0">
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="153" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="com.xilinx.sdk.xbash.toolbar1" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="com.xilinx.sdk.targetmanager.ui.toolbar1" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="com.xilinx.sdk.sw.toolbar1" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="167" y="22"/>
+<coolItem id="org.eclipse.cdt.ui.buildConfigActionSet" itemType="typeToolBarContribution" x="89" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.cdt.ui.editor.asm.AsmEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1446931660206" focus="true" label="Workspace - Debug">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" partName="system.xml" path="D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/workspace/FFT_DMA_hw_platform/system.xml" title="system.xml" tooltip="FFT_DMA_hw_platform/system.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/FFT_DMA_hw_platform/system.xml"/>
+</editor>
+<editor id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" partName="system.mss" path="D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/workspace/fft_dma_bsp/system.mss" title="system.mss" tooltip="fft_dma_bsp/system.mss" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/fft_dma_bsp/system.mss"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="fft_dma.c" partName="fft_dma.c" path="C:/Users/CHETHAN/Documents/ES6151/Co-design_deadline_DMA/workspace/fft_dma/src/fft_dma.c" title="fft_dma.c" tooltip="fft_dma/src/fft_dma.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/fft_dma/src/fft_dma.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2558" selectionTopPixel="1083"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="zynq_audio.c" partName="zynq_audio.c" path="C:/Users/CHETHAN/Documents/ES6151/Co-design_deadline_DMA/workspace/fft_dma/src/zynq_audio.c" title="zynq_audio.c" tooltip="fft_dma/src/zynq_audio.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/fft_dma/src/zynq_audio.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2412" selectionTopPixel="1037"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="avg_mag.c" partName="avg_mag.c" path="C:/Users/CHETHAN/Documents/ES6151/Co-design_deadline_DMA/workspace/fft_dma/src/avg_mag.c" title="avg_mag.c" tooltip="fft_dma/src/avg_mag.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/fft_dma/src/avg_mag.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2472" selectionTopPixel="204"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="audio.c" partName="audio.c" path="D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/workspace/fft_dma/src/audio.c" title="audio.c" tooltip="fft_dma/src/audio.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/fft_dma/src/audio.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4561" selectionTopPixel="2244"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="audio.h" partName="audio.h" path="D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT_DMA/workspace/fft_dma/src/audio.h" title="audio.h" tooltip="fft_dma/src/audio.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/fft_dma/src/audio.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="3393" selectionTopPixel="1258"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="asm_vectors.S" partName="asm_vectors.S" path="C:/Users/CHETHAN/Documents/ES6151/Co-design_deadline_DMA/workspace/fft_dma_bsp/ps7_cortexa9_0/libsrc/standalone_v3_08_a/src/asm_vectors.S" title="asm_vectors.S" tooltip="fft_dma_bsp/ps7_cortexa9_0/libsrc/standalone_v3_08_a/src/asm_vectors.S" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/fft_dma_bsp/ps7_cortexa9_0/libsrc/standalone_v3_08_a/src/asm_vectors.S"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3076" selectionTopPixel="1207"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.tm.terminal.view.TerminalView" partName="Terminal"/>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="org.eclipse.cdt.debug.ui.executablesView" partName="Executables">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" CommonNavigator.LINKING_ENABLED.delayed="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="com.xilinx.sdk.targetmanager.ui.XmdConsoleView" partName="XMD Console"/>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
+<view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Target"/>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>&#x0A;<category IMemento.internal.id="Warnings"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.internal.introview" partName="Welcome">
+<viewState>
+<presentation currentPage="file:///C:/Xilinx/14.4/ISE_DS/EDK/eclipse/nt64/eclipse/plugins/com.xilinx.sdk.product_1.0.0/intro/index.html" restore="true"/>
+<standbyPart/>
+</viewState>
+</view>
+</views>
+<perspectives activePart="org.eclipse.ui.internal.introview" activePerspective="org.eclipse.debug.ui.DebugPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.SearchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.CElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.make.ui.makeTargetActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.buildConfigActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.NavigationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.OpenActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.CodingActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.presentation"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.cdt.ui.CView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.tm.terminal.view.TerminalView"/>
+<show_view_action id="org.eclipse.cdt.make.ui.views.MakeView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.cdt.ui.includeBrowser"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewSourceFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewHeaderFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="com.xilinx.sdk.appwiz.AppWizard"/>
+<new_wizard_action id="com.xilinx.sdk.sw.ui.NewBspWizard"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.tm.terminal.view.TerminalView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.cdt.make.ui.views.MakeView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.ui.internal.introview"/>
+<fastViewBars/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="org.eclipse.cdt.ui.CView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@394aa6c3" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.14337568" ratioLeft="158" ratioRight="944" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.78836834" ratioLeft="488" ratioRight="131" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.tm.terminal.view.TerminalView" label="Terminal"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="topRight" ratio="0.7493333" ratioLeft="562" ratioRight="188" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.cdt.make.ui.views.MakeView" label="Make Target"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.debug.internal.ui.DebugPerspectiveFactory" id="org.eclipse.debug.ui.DebugPerspective" label="Debug"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.debug.ui.debugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.tm.terminal.view.TerminalView"/>
+<show_view_action id="org.eclipse.cdt.debug.ui.SignalsView"/>
+<show_view_action id="org.eclipse.debug.ui.RegisterView"/>
+<show_view_action id="org.eclipse.debug.ui.ModuleView"/>
+<show_view_action id="org.eclipse.debug.ui.MemoryView"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.cdt.debug.ui.executablesView"/>
+<show_view_action id="org.eclipse.cdt.dsf.gdb.ui.tracecontrol.view"/>
+<show_view_action id="org.eclipse.cdt.dsf.debug.ui.disassembly.view"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<perspective_action id="org.eclipse.cdt.ui.CPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="com.xilinx.sdk.targetmanager.ui.XmdConsoleView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.tm.terminal.view.TerminalView"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.cdt.debug.ui.executablesView"/>
+<view id="org.eclipse.ui.internal.introview"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@76aff46d" ratio="0.7630996" ratioLeft="1034" ratioRight="321" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">
+<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
+<page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.86268175" ratioLeft="534" ratioRight="85" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.046849757" ratioLeft="29" ratioRight="590" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.8516004" ratioLeft="878" ratioRight="153" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.cdt.dsf.gdb.ui.tracecontrol.view" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@48661ad1" ratio="0.6490196" ratioLeft="331" ratioRight="179" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.tm.terminal.view.TerminalView" label="Terminal"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.cdt.debug.ui.executablesView" label="Executables"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="com.xilinx.sdk.targetmanager.ui.XmdConsoleView" label="XMD Console"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.ModuleView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.debug.ui.SignalsView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/fft_dma/src/zynq_audio.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/fft_dma/src/fft_dma.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/fft_dma/src/avg_mag.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/fft_dma_bsp/ps7_cortexa9_0/libsrc/standalone_v3_08_a/src/asm_vectors.S"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/fft_dma_bsp/ps7_cortexa9_0/libsrc/standalone_v3_08_a/src/asm_vectors.S"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/fft_dma/src/avg_mag.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/fft_dma/src/fft_dma.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/fft_dma_bsp/ps7_cortexa9_0/libsrc/standalone_v3_08_a/src/asm_vectors.S"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/fft_dma/src/oled.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/fft_dma/src/fft_dma.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/fft_dma_bsp/ps7_cortexa9_0/libsrc/standalone_v3_08_a/src/asm_vectors.S"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/fft_dma/src/oled.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/fft_dma_bsp/ps7_cortexa9_0/libsrc/standalone_v3_08_a/src/asm_vectors.S"/>
+</editors>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="3148" y="0"/>
+</item>
+<item historyLabel="fft_dma.c" index="1">
+<position info="not_deleted" x="2313" y="96"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="3333" y="0"/>
+</item>
+<item historyLabel="fft_dma.c" index="1">
+<position info="not_deleted" x="2418" y="495"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="3333" y="0"/>
+</item>
+<item historyLabel="avg_mag.c" index="2">
+<position info="not_deleted" x="2472" y="0"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="3969" y="0"/>
+</item>
+<item historyLabel="fft_dma.c" index="1">
+<position info="not_deleted" x="2268" y="42"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="3969" y="0"/>
+</item>
+<item historyLabel="fft_dma.c" index="1">
+<position info="not_deleted" x="2245" y="6"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="3189" y="0"/>
+</item>
+<item historyLabel="fft_dma.c" index="1">
+<position info="not_deleted" x="2245" y="6"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="3188" y="0"/>
+</item>
+<item historyLabel="fft_dma.c" index="1">
+<position info="not_deleted" x="2747" y="0"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="3188" y="0"/>
+</item>
+<item historyLabel="asm_vectors.S" index="3">
+<position info="not_deleted" x="3076" y="0"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="2412" y="0"/>
+</item>
+<item historyLabel="asm_vectors.S" index="3">
+<position info="not_deleted" x="3076" y="0"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="2412" y="0"/>
+</item>
+<item historyLabel="asm_vectors.S" index="3">
+<position info="not_deleted" x="3076" y="0"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="2412" y="0"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="2412" y="0"/>
+</item>
+<item historyLabel="asm_vectors.S" index="4">
+<position info="not_deleted" x="3076" y="0"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="2412" y="0"/>
+</item>
+<item historyLabel="avg_mag.c" index="5">
+<position info="not_deleted" x="2472" y="0"/>
+</item>
+<item historyLabel="fft_dma.c" index="6">
+<position info="not_deleted" x="1386" y="0"/>
+</item>
+<item historyLabel="asm_vectors.S" index="4">
+<position info="not_deleted" x="3076" y="0"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="2412" y="0"/>
+</item>
+<item historyLabel="fft_dma.c" index="6">
+<position info="not_deleted" x="1386" y="0"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="2412" y="0"/>
+</item>
+<item historyLabel="asm_vectors.S" index="7">
+<position info="not_deleted" x="3076" y="0"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="2412" y="0"/>
+</item>
+<item historyLabel="oled.c" index="8">
+<position info="not_deleted" x="1106" y="0"/>
+</item>
+<item historyLabel="fft_dma.c" index="9">
+<position info="not_deleted" x="2367" y="0"/>
+</item>
+<item historyLabel="asm_vectors.S" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="2412" y="0"/>
+</item>
+<item historyLabel="oled.c" index="11">
+<position info="not_deleted" x="1170" y="0"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="2412" y="0"/>
+</item>
+<item historyLabel="fft_dma.c" index="9">
+<position info="not_deleted" x="2207" y="0"/>
+</item>
+<item historyLabel="asm_vectors.S" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="2764" y="0"/>
+</item>
+<item historyLabel="fft_dma.c" index="9">
+<position info="not_deleted" x="2261" y="0"/>
+</item>
+<item historyLabel="asm_vectors.S" index="12">
+<position info="not_deleted" x="3076" y="0"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="2412" y="0"/>
+</item>
+<item historyLabel="fft_dma.c" index="9">
+<position info="not_deleted" x="2365" y="0"/>
+</item>
+<item historyLabel="asm_vectors.S" index="12">
+<position info="not_deleted" x="3076" y="0"/>
+</item>
+<item historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="2412" y="0"/>
+</item>
+<item historyLabel="fft_dma.c" index="9">
+<position info="not_deleted" x="2558" y="0"/>
+</item>
+<item historyLabel="asm_vectors.S" index="12">
+<position info="not_deleted" x="3076" y="0"/>
+</item>
+<item active="true" historyLabel="zynq_audio.c" index="0">
+<position info="not_deleted" x="2412" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="asm_vectors.S" tooltip="fft_dma_bsp/ps7_cortexa9_0/libsrc/standalone_v3_08_a/src/asm_vectors.S">
+<persistable path="/fft_dma_bsp/ps7_cortexa9_0/libsrc/standalone_v3_08_a/src/asm_vectors.S"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="oled.c" tooltip="fft_dma/src/oled.c">
+<persistable path="/fft_dma/src/oled.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="audio.h" tooltip="fft_dma/src/audio.h">
+<persistable path="/fft_dma/src/audio.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="audio.c" tooltip="fft_dma/src/audio.c">
+<persistable path="/fft_dma/src/audio.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="avg_mag.c" tooltip="fft_dma/src/avg_mag.c">
+<persistable path="/fft_dma/src/avg_mag.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xaxidma.c" tooltip="fft_dma_bsp/ps7_cortexa9_0/libsrc/axidma_v7_01_a/src/xaxidma.c">
+<persistable path="/fft_dma_bsp/ps7_cortexa9_0/libsrc/axidma_v7_01_a/src/xaxidma.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="zynq_audio.c" tooltip="fft_dma/src/zynq_audio.c">
+<persistable path="/fft_dma/src/zynq_audio.c"/>
+</file>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="zynq_audio.c" tooltip="D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\Backup\FFT_DMA\workspace\src\zynq_audio.c">
+<persistable path="D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\Backup\FFT_DMA\workspace\src\zynq_audio.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="fft_dma.c" tooltip="fft_dma/src/fft_dma.c">
+<persistable path="/fft_dma/src/fft_dma.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" tooltip="fft_dma_bsp/system.mss">
+<persistable path="/fft_dma_bsp/system.mss"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" tooltip="FFT_DMA_hw_platform/system.xml">
+<persistable path="/FFT_DMA_hw_platform/system.xml"/>
+</file>
+</mruList>
+</workbench>

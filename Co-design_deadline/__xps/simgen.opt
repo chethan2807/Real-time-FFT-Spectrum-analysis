@@ -1,0 +1,1 @@
+ -p zynq -lang vhdl$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst -s isim -X D:/STUDIES/NTU_PROJECTS/EMBEDDED_SYSTEM_DESIGN/FFT_HARDWARE_PROJ/Backup/FFT8.0_FPGA_working_XPS_with_mag/FFT8.0_FPGA_XPS/

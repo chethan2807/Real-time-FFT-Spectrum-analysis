@@ -1,0 +1,70 @@
+/*****************************************************************************
+* Filename:          D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS/drivers/fft_axi4_r_v1_00_a/src/fft_axi4_r.c
+* Version:           1.00.a
+* Description:       fft_axi4_r Driver Source File
+* Date:              Tue Sep 22 11:58:27 2015 (by Create and Import Peripheral Wizard)
+*****************************************************************************/
+
+
+/***************************** Include Files *******************************/
+
+#include "fft_axi4_r.h"
+
+/************************** Function Definitions ***************************/
+
+#include "xparameters.h"
+#include "xbasic_types.h"
+#include "xstatus.h"
+
+//Xuint32 *baseaddr_p = (Xuint32 *)XPAR_MY_MULTIPLIER_0_BASEADDR;
+
+int main (void) {
+  Xuint32 i, m= 0;
+  Xuint32 rst = 1;
+  Xuint32 j =1;
+  int temp;
+  Xuint32 baseaddr = 0x6C200000 ; //XPAR_FFT_AXI4_R_0_S_AXI_MEM0_BASEADDR;
+
+  // Clear the screen
+  xil_printf("%c[2J",27);
+
+  // Check that the peripheral exists
+  //XASSERT_NONVOID(baseaddr_p != XNULL);
+  //baseaddr = (Xuint32) baseaddr_p;
+
+  xil_printf("fft Test\n\r");
+   //FFT_AXI4_R_mWriteMemory(baseaddr+516, 1); // soft reset
+   xil_printf("soft reset done\n", j);
+  // Reset read and write packet FIFOs to initial state
+  while(m <3){
+  for (i=0; i<512; i=i+4){
+  if (j<6){
+     FFT_AXI4_R_mWriteMemory(baseaddr+i, j);
+     xil_printf("Wrote: 0x%08x \n\r", j);
+  }
+  else {
+	  FFT_AXI4_R_mWriteMemory(baseaddr+i, 0);
+	  xil_printf("Wrote: 0x%08x \n\r", 0);
+
+  	  }
+  j++;
+  }
+  FFT_AXI4_R_mWriteMemory(baseaddr+512, 1); //start fft
+  xil_printf("fft started \n", j);
+ // while ((FFT_AXI4_R_mReadMemory(baseaddr)) );
+  for (i=0; i<1028; i=i+4){
+	  temp =  FFT_AXI4_R_mReadMemory(baseaddr+i);
+	  xil_printf("read data: %d \n\r", temp);
+    }
+  m++= 1;
+  // Push data to write packet FIFO
+  /*for(i = 1; i <= 4; i++ ){
+    temp = (i << 16) + i;
+    xil_printf("Wrote: 0x%08x \n\r", temp);
+    MY_MULTIPLIER_mWriteToFIFO(baseaddr,0, temp);
+  }*/
+ 
+  // pop data out from read packet FIFO
+  }
+
+}

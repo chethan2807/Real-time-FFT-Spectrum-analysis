@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS/drivers/fft_axi4_r_v1_00_a/data/fft_axi4_r_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Tue Sep 22 11:58:27 2015 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER fft_axi4_r
+
+  OPTION supported_peripherals = (fft_axi4_r);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

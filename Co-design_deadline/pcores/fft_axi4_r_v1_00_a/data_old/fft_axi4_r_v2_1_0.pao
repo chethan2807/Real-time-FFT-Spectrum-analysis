@@ -1,0 +1,12 @@
+##############################################################################
+## Filename:          D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\Backup\FFT8.0_FPGA_working_XPS_with_mag\FFT8.0_FPGA_XPS\pcores/fft_axi4_r_v1_00_a/data/fft_axi4_r_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Mon Nov 02 23:40:25 2015 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a all vhdl
+lib axi_slave_burst_v1_00_a all vhdl
+lib fft_axi4_r_v1_00_a xfft_v8_0 verilog
+lib fft_axi4_r_v1_00_a fft_top verilog
+lib fft_axi4_r_v1_00_a user_logic verilog
+lib fft_axi4_r_v1_00_a fft_axi4_r vhdl

@@ -1,0 +1,10 @@
+-batch 
+-create fft_axi4_r 
+-ver 1.00.a 
+-dir "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS" 
+-lang verilog 
+-bus axi4 s 
+-burst s 32 
+-arn 1 
+-xps 
+-driver 

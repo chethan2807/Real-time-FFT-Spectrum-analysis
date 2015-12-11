@@ -1,0 +1,8 @@
+##############################################################################
+## Filename:          D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\Backup\FFT_DMA\pcores/axi_stream_generator_v1_00_a/data/axi_stream_generator_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Sun Nov 08 02:44:06 2015 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib axi_stream_generator_v1_00_a xfft_v8_0 verilog
+lib axi_stream_generator_v1_00_a axi_stream_generator verilog

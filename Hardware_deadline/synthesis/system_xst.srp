@@ -1,0 +1,902 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_xst.prj"
+Verilog Include Directory          : {"D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\pcores\" "C:\Xilinx\14.4\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc7z020clg484-1
+Output File Name                   : "../implementation/system.ngc"
+
+---- Source Options
+Top Module Name                    : system
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 10000
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" into library work
+Parsing entity <system>.
+Parsing architecture <STRUCTURE> of entity <system>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system> (architecture <STRUCTURE>) from library <work>.
+WARNING:HDLCompiler:89 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" Line 1070: <iobuf> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:634 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" Line 1125: Net <axi_interconnect_1_S_ARLEN[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" Line 1136: Net <axi_interconnect_1_S_AWLEN[7]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system>.
+    Related source file is "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd".
+    Set property "BOX_TYPE = user_black_box" for instance <processing_system7_0>.
+    Set property "BOX_TYPE = user_black_box" for instance <axi_interconnect_1>.
+    Set property "BOX_TYPE = user_black_box" for instance <i2s_ctrl_0>.
+    Set property "BOX_TYPE = user_black_box" for instance <axi_gpio_0>.
+    Set property "BOX_TYPE = user_black_box" for instance <oled_bypass_ps2pl_0>.
+    Set property "BOX_TYPE = user_black_box" for instance <fft_axi4_r_0>.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET0_GMII_TXD> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET1_GMII_TXD> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <GPIO_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <GPIO_T> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SDIO0_DATA_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SDIO0_DATA_T> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SDIO0_BUSVOLT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SDIO1_DATA_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SDIO1_DATA_T> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SDIO1_BUSVOLT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <TRACE_DATA> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <USB0_PORT_INDCTL> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <USB1_PORT_INDCTL> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_ARID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_AWID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_WID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_ARBURST> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_ARLOCK> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_ARSIZE> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_AWBURST> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_AWLOCK> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_AWSIZE> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_ARPROT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_AWPROT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_ARADDR> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_AWADDR> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_WDATA> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_ARCACHE> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_ARLEN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_ARQOS> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_AWCACHE> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_AWLEN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_AWQOS> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_WSTRB> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP0_BRESP> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP0_RRESP> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP0_RDATA> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP0_BID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP0_RID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP1_BRESP> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP1_RRESP> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP1_RDATA> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP1_BID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP1_RID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_ACP_BRESP> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_ACP_RRESP> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_ACP_BID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_ACP_RID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_ACP_RDATA> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP0_BRESP> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP0_RRESP> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP0_BID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP0_RID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP0_RDATA> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP0_RCOUNT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP0_WCOUNT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP0_RACOUNT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP0_WACOUNT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP1_BRESP> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP1_RRESP> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP1_BID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP1_RID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP1_RDATA> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP1_RCOUNT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP1_WCOUNT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP1_RACOUNT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP1_WACOUNT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP2_BRESP> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP2_RRESP> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP2_BID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP2_RID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP2_RDATA> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP2_RCOUNT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP2_WCOUNT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP2_RACOUNT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP2_WACOUNT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP3_BRESP> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP3_RRESP> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP3_BID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP3_RID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP3_RDATA> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP3_RCOUNT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP3_WCOUNT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP3_RACOUNT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP3_WACOUNT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <DMA0_DATYPE> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <DMA1_DATYPE> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <DMA2_DATYPE> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <DMA3_DATYPE> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <FTMT_F2P_TRIGACK> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <FTMT_P2F_TRIG> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <FTMT_P2F_DEBUG> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <EVENT_STANDBYWFE> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <EVENT_STANDBYWFI> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <CAN0_PHY_TX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <CAN1_PHY_TX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET0_GMII_TX_EN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET0_GMII_TX_ER> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET0_MDIO_MDC> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET0_MDIO_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET0_MDIO_T> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET0_PTP_DELAY_REQ_RX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET0_PTP_DELAY_REQ_TX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET0_PTP_PDELAY_REQ_RX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET0_PTP_PDELAY_REQ_TX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET0_PTP_PDELAY_RESP_RX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET0_PTP_PDELAY_RESP_TX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET0_PTP_SYNC_FRAME_RX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET0_PTP_SYNC_FRAME_TX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET0_SOF_RX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET0_SOF_TX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET1_GMII_TX_EN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET1_GMII_TX_ER> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET1_MDIO_MDC> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET1_MDIO_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET1_MDIO_T> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET1_PTP_DELAY_REQ_RX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET1_PTP_DELAY_REQ_TX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET1_PTP_PDELAY_REQ_RX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET1_PTP_PDELAY_REQ_TX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET1_PTP_PDELAY_RESP_RX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET1_PTP_PDELAY_RESP_TX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET1_PTP_SYNC_FRAME_RX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET1_PTP_SYNC_FRAME_TX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET1_SOF_RX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <ENET1_SOF_TX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <I2C1_SDA_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <I2C1_SDA_T> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <I2C1_SCL_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <I2C1_SCL_T> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <PJTAG_TD_T> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <PJTAG_TD_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SDIO0_CLK> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SDIO0_CMD_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SDIO0_CMD_T> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SDIO0_LED> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SDIO0_BUSPOW> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SDIO1_CLK> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SDIO1_CMD_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SDIO1_CMD_T> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SDIO1_LED> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SDIO1_BUSPOW> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI0_SCLK_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI0_SCLK_T> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI0_MOSI_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI0_MOSI_T> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI0_MISO_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI0_MISO_T> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI0_SS_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI0_SS1_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI0_SS2_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI0_SS_T> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI1_SCLK_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI1_SCLK_T> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI1_MOSI_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI1_MOSI_T> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI1_MISO_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI1_MISO_T> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI1_SS_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI1_SS1_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI1_SS2_O> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <SPI1_SS_T> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <UART0_DTRN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <UART0_RTSN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <UART0_TX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <UART1_DTRN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <UART1_RTSN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <UART1_TX> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <TTC0_WAVE0_OUT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <TTC0_WAVE1_OUT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <TTC0_WAVE2_OUT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <TTC1_WAVE0_OUT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <TTC1_WAVE1_OUT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <TTC1_WAVE2_OUT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <WDT_RST_OUT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <TRACE_CTL> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <USB0_VBUS_PWRSELECT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <USB1_VBUS_PWRSELECT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP0_ARESETN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_ARESETN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_ARVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_AWVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_BREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_RREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_WLAST> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <M_AXI_GP1_WVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP0_ARESETN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP0_ARREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP0_AWREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP0_BVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP0_RLAST> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP0_RVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP0_WREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP1_ARESETN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP1_ARREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP1_AWREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP1_BVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP1_RLAST> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP1_RVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_GP1_WREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_ACP_ARESETN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_ACP_AWREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_ACP_ARREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_ACP_BVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_ACP_RLAST> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_ACP_RVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_ACP_WREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP0_ARESETN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP0_ARREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP0_AWREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP0_BVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP0_RLAST> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP0_RVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP0_WREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP1_ARESETN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP1_ARREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP1_AWREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP1_BVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP1_RLAST> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP1_RVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP1_WREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP2_ARESETN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP2_ARREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP2_AWREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP2_BVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP2_RLAST> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP2_RVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP2_WREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP3_ARESETN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP3_ARREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP3_AWREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP3_BVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP3_RLAST> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP3_RVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <S_AXI_HP3_WREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <DMA0_DAVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <DMA0_DRREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <DMA0_RSTN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <DMA1_DAVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <DMA1_DRREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <DMA1_RSTN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <DMA2_DAVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <DMA2_DRREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <DMA2_RSTN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <DMA3_DAVALID> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <DMA3_DRREADY> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <DMA3_RSTN> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <FCLK_CLK3> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <FCLK_CLK2> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <FCLK_RESET3_N> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <FCLK_RESET2_N> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <FCLK_RESET1_N> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <EVENT_EVENTO> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_DMAC_ABORT> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_DMAC0> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_DMAC1> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_DMAC2> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_DMAC3> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_DMAC4> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_DMAC5> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_DMAC6> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_DMAC7> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_SMC> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_QSPI> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_CTI> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_GPIO> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_USB0> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_ENET0> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_ENET_WAKE0> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_SDIO0> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_I2C0> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_SPI0> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_UART0> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_CAN0> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_USB1> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_ENET1> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_ENET_WAKE1> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_SDIO1> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_I2C1> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_SPI1> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_UART1> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1241: Output port <IRQ_P2F_CAN1> of the instance <processing_system7_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <S_AXI_ARESET_OUT_N> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <S_AXI_BUSER> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <S_AXI_RUSER> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <M_AXI_AWREGION> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <M_AXI_AWQOS> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <M_AXI_AWUSER> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <M_AXI_WID> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <M_AXI_WUSER> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <M_AXI_ARREGION> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <M_AXI_ARQOS> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <M_AXI_ARUSER> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <S_AXI_CTRL_BRESP> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <S_AXI_CTRL_RDATA> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <S_AXI_CTRL_RRESP> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AW_TRANS_SEQ> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AW_ARB_GRANT> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AR_TRANS_SEQ> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AR_ARB_GRANT> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AW_TRANS_QUAL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AW_ACCEPT_CNT> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AW_ACTIVE_THREAD> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AW_ACTIVE_TARGET> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AW_ACTIVE_REGION> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AW_ERROR> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AW_TARGET> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AR_TRANS_QUAL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AR_ACCEPT_CNT> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AR_ACTIVE_THREAD> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AR_ACTIVE_TARGET> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AR_ACTIVE_REGION> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AR_ERROR> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AR_TARGET> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_B_TRANS_SEQ> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_R_BEAT_CNT> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_R_TRANS_SEQ> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AW_ISSUING_CNT> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_AR_ISSUING_CNT> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_W_BEAT_CNT> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_W_TRANS_SEQ> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_BID_TARGET> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_RID_TARGET> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SR_SC_ARADDR> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SR_SC_ARADDRCONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SR_SC_AWADDR> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SR_SC_AWADDRCONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SR_SC_BRESP> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SR_SC_RDATA> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SR_SC_RDATACONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SR_SC_WDATA> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SR_SC_WDATACONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SC_SF_ARADDR> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SC_SF_ARADDRCONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SC_SF_AWADDR> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SC_SF_AWADDRCONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SC_SF_BRESP> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SC_SF_RDATA> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SC_SF_RDATACONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SC_SF_WDATA> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SC_SF_WDATACONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SF_CB_ARADDR> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SF_CB_ARADDRCONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SF_CB_AWADDR> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SF_CB_AWADDRCONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SF_CB_BRESP> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SF_CB_RDATA> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SF_CB_RDATACONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SF_CB_WDATA> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_SF_CB_WDATACONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_CB_MF_ARADDR> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_CB_MF_ARADDRCONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_CB_MF_AWADDR> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_CB_MF_AWADDRCONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_CB_MF_BRESP> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_CB_MF_RDATA> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_CB_MF_RDATACONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_CB_MF_WDATA> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_CB_MF_WDATACONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MF_MC_ARADDR> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MF_MC_ARADDRCONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MF_MC_AWADDR> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MF_MC_AWADDRCONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MF_MC_BRESP> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MF_MC_RDATA> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MF_MC_RDATACONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MF_MC_WDATA> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MF_MC_WDATACONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MC_MP_ARADDR> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MC_MP_ARADDRCONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MC_MP_AWADDR> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MC_MP_AWADDRCONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MC_MP_BRESP> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MC_MP_RDATA> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MC_MP_RDATACONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MC_MP_WDATA> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MC_MP_WDATACONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MP_MR_ARADDR> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MP_MR_ARADDRCONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MP_MR_AWADDR> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MP_MR_AWADDRCONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MP_MR_BRESP> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MP_MR_RDATA> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MP_MR_RDATACONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MP_MR_WDATA> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_MP_MR_WDATACONTROL> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <IRQ> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <S_AXI_CTRL_AWREADY> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <S_AXI_CTRL_WREADY> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <S_AXI_CTRL_BVALID> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <S_AXI_CTRL_ARREADY> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <S_AXI_CTRL_RVALID> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <INTERCONNECT_ARESET_OUT_N> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_BID_ERROR> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 1918: Output port <DEBUG_RID_ERROR> of the instance <axi_interconnect_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 2153: Output port <GPIO2_IO_O> of the instance <axi_gpio_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 2153: Output port <GPIO2_IO_T> of the instance <axi_gpio_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\FFT_XPS\hdl\system.vhd" line 2153: Output port <IP2INTC_Irpt> of the instance <axi_gpio_0> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <axi_interconnect_1_S_ARLEN<7:4>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <axi_interconnect_1_S_AWLEN<7:4>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <system> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../implementation/system_processing_system7_0_wrapper.ngc>.
+Reading core <../implementation/system_i2s_ctrl_0_wrapper.ngc>.
+Reading core <../implementation/system_axi_interconnect_1_wrapper.ngc>.
+Reading core <../implementation/system_axi_gpio_0_wrapper.ngc>.
+Reading core <../implementation/system_oled_bypass_ps2pl_0_wrapper.ngc>.
+Reading core <../implementation/system_fft_axi4_r_0_wrapper.ngc>.
+Reading Secure Unit <blk000002a1>.
+Loading core <system_processing_system7_0_wrapper> for timing and area information for instance <processing_system7_0>.
+Loading core <system_i2s_ctrl_0_wrapper> for timing and area information for instance <i2s_ctrl_0>.
+Loading core <system_axi_interconnect_1_wrapper> for timing and area information for instance <axi_interconnect_1>.
+Loading core <system_axi_gpio_0_wrapper> for timing and area information for instance <axi_gpio_0>.
+Loading core <system_oled_bypass_ps2pl_0_wrapper> for timing and area information for instance <oled_bypass_ps2pl_0>.
+Loading core <system_fft_axi4_r_0_wrapper> for timing and area information for instance <fft_axi4_r_0>.
+INFO:Xst:1901 - Instance blk0000023f in unit blk0000023f of type RAMB18SDP has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance blk00000240 in unit blk00000240 of type RAMB18SDP has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance blk0000052d in unit blk0000052d of type DSP48E has been replaced by DSP48E1
+INFO:Xst:1901 - Instance blk0000052e in unit blk0000052e of type DSP48E has been replaced by DSP48E1
+INFO:Xst:1901 - Instance blk0000052f in unit blk0000052f of type DSP48E has been replaced by DSP48E1
+INFO:Xst:1901 - Instance blk00000530 in unit blk00000530 of type DSP48E has been replaced by DSP48E1
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+WARNING:Xst:528 - Multi-source in Unit <system_processing_system7_0_wrapper> on signal <PS_SRSTB>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <processing_system7_0_PS_SRSTB>
+   Output port PS7:PSSRSTB of instance <processing_system7_0/processing_system7_0/PS7_i>
+
+WARNING:Xst:528 - Multi-source in Unit <system_processing_system7_0_wrapper> on signal <PS_CLK>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <processing_system7_0_PS_CLK>
+   Output port PS7:PSCLK of instance <processing_system7_0/processing_system7_0/PS7_i>
+
+WARNING:Xst:528 - Multi-source in Unit <system_processing_system7_0_wrapper> on signal <PS_PORB>; this signal is connected to multiple drivers.
+Drivers are: 
+   Primary input port <processing_system7_0_PS_PORB>
+   Output port PS7:PSPORB of instance <processing_system7_0/processing_system7_0/PS7_i>
+
+Optimizing unit <system> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system, actual ratio is 24.
+INFO:Xst:2260 - The FF/Latch <i2s_ctrl_0/USER_LOGIC_I/clk_cntr_10> in Unit <i2s_ctrl_0> is equivalent to the following FF/Latch : <i2s_ctrl_0/USER_LOGIC_I/clk_cntr_10_1> 
+INFO:Xst:2260 - The FF/Latch <i2s_ctrl_0/USER_LOGIC_I/Inst_iis_ser/iis_state_FSM_FFd3> in Unit <i2s_ctrl_0> is equivalent to the following FF/Latch : <i2s_ctrl_0/USER_LOGIC_I/Inst_iis_ser/iis_state_FSM_FFd3_1> 
+INFO:Xst:2260 - The FF/Latch <i2s_ctrl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <i2s_ctrl_0> is equivalent to the following FF/Latch : <i2s_ctrl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> 
+INFO:Xst:2260 - The FF/Latch <i2s_ctrl_0/USER_LOGIC_I/Inst_iis_ser/iis_state_FSM_FFd2> in Unit <i2s_ctrl_0> is equivalent to the following FF/Latch : <i2s_ctrl_0/USER_LOGIC_I/Inst_iis_ser/iis_state_FSM_FFd2_1> 
+INFO:Xst:2260 - The FF/Latch <i2s_ctrl_0/USER_LOGIC_I/Inst_iis_deser/lrclk_d1> in Unit <i2s_ctrl_0> is equivalent to the following FF/Latch : <i2s_ctrl_0/USER_LOGIC_I/Inst_iis_deser/lrclk_d1_1> 
+INFO:Xst:2260 - The FF/Latch <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi_interconnect_1> is equivalent to the following FF/Latch : <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> 
+INFO:Xst:2260 - The FF/Latch <oled_bypass_ps2pl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0> in Unit <oled_bypass_ps2pl_0> is equivalent to the following FF/Latch : <oled_bypass_ps2pl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_1> 
+INFO:Xst:2260 - The FF/Latch <oled_bypass_ps2pl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <oled_bypass_ps2pl_0> is equivalent to the following FF/Latch : <oled_bypass_ps2pl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> 
+INFO:Xst:2260 - The FF/Latch <oled_bypass_ps2pl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1> in Unit <oled_bypass_ps2pl_0> is equivalent to the following FF/Latch : <oled_bypass_ps2pl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_1> 
+INFO:Xst:2260 - The FF/Latch <oled_bypass_ps2pl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2> in Unit <oled_bypass_ps2pl_0> is equivalent to the following FF/Latch : <oled_bypass_ps2pl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_1> 
+INFO:Xst:2260 - The FF/Latch <fft_axi4_r_0/USER_LOGIC_I/read_address_0> in Unit <fft_axi4_r_0> is equivalent to the following 3 FFs/Latches : <fft_axi4_r_0/USER_LOGIC_I/read_address_0_1> <fft_axi4_r_0/USER_LOGIC_I/read_address_0_2> <fft_axi4_r_0/USER_LOGIC_I/read_address_0_3> 
+INFO:Xst:2260 - The FF/Latch <fft_axi4_r_0/USER_LOGIC_I/read_address_1> in Unit <fft_axi4_r_0> is equivalent to the following 2 FFs/Latches : <fft_axi4_r_0/USER_LOGIC_I/read_address_1_1> <fft_axi4_r_0/USER_LOGIC_I/read_address_1_2> 
+INFO:Xst:2260 - The FF/Latch <fft_axi4_r_0/USER_LOGIC_I/read_address_2> in Unit <fft_axi4_r_0> is equivalent to the following 8 FFs/Latches : <fft_axi4_r_0/USER_LOGIC_I/read_address_2_1> <fft_axi4_r_0/USER_LOGIC_I/read_address_2_2> <fft_axi4_r_0/USER_LOGIC_I/read_address_2_3> <fft_axi4_r_0/USER_LOGIC_I/read_address_2_4> <fft_axi4_r_0/USER_LOGIC_I/read_address_2_5> <fft_axi4_r_0/USER_LOGIC_I/read_address_2_6> <fft_axi4_r_0/USER_LOGIC_I/read_address_2_7> <fft_axi4_r_0/USER_LOGIC_I/read_address_2_8> 
+INFO:Xst:2260 - The FF/Latch <fft_axi4_r_0/USER_LOGIC_I/read_address_3> in Unit <fft_axi4_r_0> is equivalent to the following 5 FFs/Latches : <fft_axi4_r_0/USER_LOGIC_I/read_address_3_1> <fft_axi4_r_0/USER_LOGIC_I/read_address_3_2> <fft_axi4_r_0/USER_LOGIC_I/read_address_3_3> <fft_axi4_r_0/USER_LOGIC_I/read_address_3_4> <fft_axi4_r_0/USER_LOGIC_I/read_address_3_5> 
+INFO:Xst:2260 - The FF/Latch <fft_axi4_r_0/USER_LOGIC_I/read_address_4> in Unit <fft_axi4_r_0> is equivalent to the following 3 FFs/Latches : <fft_axi4_r_0/USER_LOGIC_I/read_address_4_1> <fft_axi4_r_0/USER_LOGIC_I/read_address_4_2> <fft_axi4_r_0/USER_LOGIC_I/read_address_4_3> 
+INFO:Xst:2260 - The FF/Latch <fft_axi4_r_0/USER_LOGIC_I/read_address_5> in Unit <fft_axi4_r_0> is equivalent to the following 3 FFs/Latches : <fft_axi4_r_0/USER_LOGIC_I/read_address_5_1> <fft_axi4_r_0/USER_LOGIC_I/read_address_5_2> <fft_axi4_r_0/USER_LOGIC_I/read_address_5_3> 
+INFO:Xst:2260 - The FF/Latch <fft_axi4_r_0/USER_LOGIC_I/read_address_6> in Unit <fft_axi4_r_0> is equivalent to the following 3 FFs/Latches : <fft_axi4_r_0/USER_LOGIC_I/read_address_6_1> <fft_axi4_r_0/USER_LOGIC_I/read_address_6_2> <fft_axi4_r_0/USER_LOGIC_I/read_address_6_3> 
+INFO:Xst:2260 - The FF/Latch <fft_axi4_r_0/USER_LOGIC_I/read_address_7> in Unit <fft_axi4_r_0> is equivalent to the following 3 FFs/Latches : <fft_axi4_r_0/USER_LOGIC_I/read_address_7_1> <fft_axi4_r_0/USER_LOGIC_I/read_address_7_2> <fft_axi4_r_0/USER_LOGIC_I/read_address_7_3> 
+INFO:Xst:2260 - The FF/Latch <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0> in Unit <fft_axi4_r_0> is equivalent to the following 71 FFs/Latches : <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_1> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_2> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_3> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_4> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_5> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_6> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_7> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_8> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_9>
+   <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_10> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_11> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_12> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_13> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_14> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_15> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_16> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_17> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_18> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_19> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_20>
+   <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_21> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_22> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_23> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_24> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_25> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_26> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_27> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_28> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_29> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_30> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_31>
+   <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_32> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_33> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_34> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_35> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_36> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_37> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_38> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_39> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_40> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_41> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_42>
+   <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_43> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_44> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_45> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_46> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_47> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_48> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_49> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_50> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_51> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_52> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_53>
+   <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_54> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_55> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_56> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_57> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_58> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_59> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_60> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_61> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_62> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_63> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_64>
+   <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_65> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_66> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_67> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_68> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_69> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_70> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_71>
+INFO:Xst:2260 - The FF/Latch <i2s_ctrl_0/USER_LOGIC_I/clk_cntr_10> in Unit <i2s_ctrl_0> is equivalent to the following FF/Latch : <i2s_ctrl_0/USER_LOGIC_I/clk_cntr_10_1> 
+INFO:Xst:2260 - The FF/Latch <i2s_ctrl_0/USER_LOGIC_I/Inst_iis_ser/iis_state_FSM_FFd3> in Unit <i2s_ctrl_0> is equivalent to the following FF/Latch : <i2s_ctrl_0/USER_LOGIC_I/Inst_iis_ser/iis_state_FSM_FFd3_1> 
+INFO:Xst:2260 - The FF/Latch <i2s_ctrl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <i2s_ctrl_0> is equivalent to the following FF/Latch : <i2s_ctrl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> 
+INFO:Xst:2260 - The FF/Latch <i2s_ctrl_0/USER_LOGIC_I/Inst_iis_ser/iis_state_FSM_FFd2> in Unit <i2s_ctrl_0> is equivalent to the following FF/Latch : <i2s_ctrl_0/USER_LOGIC_I/Inst_iis_ser/iis_state_FSM_FFd2_1> 
+INFO:Xst:2260 - The FF/Latch <i2s_ctrl_0/USER_LOGIC_I/Inst_iis_deser/lrclk_d1> in Unit <i2s_ctrl_0> is equivalent to the following FF/Latch : <i2s_ctrl_0/USER_LOGIC_I/Inst_iis_deser/lrclk_d1_1> 
+INFO:Xst:2260 - The FF/Latch <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi_interconnect_1> is equivalent to the following FF/Latch : <axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> 
+INFO:Xst:2260 - The FF/Latch <oled_bypass_ps2pl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0> in Unit <oled_bypass_ps2pl_0> is equivalent to the following FF/Latch : <oled_bypass_ps2pl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_1> 
+INFO:Xst:2260 - The FF/Latch <oled_bypass_ps2pl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <oled_bypass_ps2pl_0> is equivalent to the following FF/Latch : <oled_bypass_ps2pl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> 
+INFO:Xst:2260 - The FF/Latch <oled_bypass_ps2pl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1> in Unit <oled_bypass_ps2pl_0> is equivalent to the following FF/Latch : <oled_bypass_ps2pl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_1> 
+INFO:Xst:2260 - The FF/Latch <oled_bypass_ps2pl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2> in Unit <oled_bypass_ps2pl_0> is equivalent to the following FF/Latch : <oled_bypass_ps2pl_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_1> 
+INFO:Xst:2260 - The FF/Latch <fft_axi4_r_0/USER_LOGIC_I/read_address_0> in Unit <fft_axi4_r_0> is equivalent to the following 3 FFs/Latches : <fft_axi4_r_0/USER_LOGIC_I/read_address_0_1> <fft_axi4_r_0/USER_LOGIC_I/read_address_0_2> <fft_axi4_r_0/USER_LOGIC_I/read_address_0_3> 
+INFO:Xst:2260 - The FF/Latch <fft_axi4_r_0/USER_LOGIC_I/read_address_1> in Unit <fft_axi4_r_0> is equivalent to the following 2 FFs/Latches : <fft_axi4_r_0/USER_LOGIC_I/read_address_1_1> <fft_axi4_r_0/USER_LOGIC_I/read_address_1_2> 
+INFO:Xst:2260 - The FF/Latch <fft_axi4_r_0/USER_LOGIC_I/read_address_2> in Unit <fft_axi4_r_0> is equivalent to the following 8 FFs/Latches : <fft_axi4_r_0/USER_LOGIC_I/read_address_2_1> <fft_axi4_r_0/USER_LOGIC_I/read_address_2_2> <fft_axi4_r_0/USER_LOGIC_I/read_address_2_3> <fft_axi4_r_0/USER_LOGIC_I/read_address_2_4> <fft_axi4_r_0/USER_LOGIC_I/read_address_2_5> <fft_axi4_r_0/USER_LOGIC_I/read_address_2_6> <fft_axi4_r_0/USER_LOGIC_I/read_address_2_7> <fft_axi4_r_0/USER_LOGIC_I/read_address_2_8> 
+INFO:Xst:2260 - The FF/Latch <fft_axi4_r_0/USER_LOGIC_I/read_address_3> in Unit <fft_axi4_r_0> is equivalent to the following 5 FFs/Latches : <fft_axi4_r_0/USER_LOGIC_I/read_address_3_1> <fft_axi4_r_0/USER_LOGIC_I/read_address_3_2> <fft_axi4_r_0/USER_LOGIC_I/read_address_3_3> <fft_axi4_r_0/USER_LOGIC_I/read_address_3_4> <fft_axi4_r_0/USER_LOGIC_I/read_address_3_5> 
+INFO:Xst:2260 - The FF/Latch <fft_axi4_r_0/USER_LOGIC_I/read_address_4> in Unit <fft_axi4_r_0> is equivalent to the following 3 FFs/Latches : <fft_axi4_r_0/USER_LOGIC_I/read_address_4_1> <fft_axi4_r_0/USER_LOGIC_I/read_address_4_2> <fft_axi4_r_0/USER_LOGIC_I/read_address_4_3> 
+INFO:Xst:2260 - The FF/Latch <fft_axi4_r_0/USER_LOGIC_I/read_address_5> in Unit <fft_axi4_r_0> is equivalent to the following 3 FFs/Latches : <fft_axi4_r_0/USER_LOGIC_I/read_address_5_1> <fft_axi4_r_0/USER_LOGIC_I/read_address_5_2> <fft_axi4_r_0/USER_LOGIC_I/read_address_5_3> 
+INFO:Xst:2260 - The FF/Latch <fft_axi4_r_0/USER_LOGIC_I/read_address_6> in Unit <fft_axi4_r_0> is equivalent to the following 3 FFs/Latches : <fft_axi4_r_0/USER_LOGIC_I/read_address_6_1> <fft_axi4_r_0/USER_LOGIC_I/read_address_6_2> <fft_axi4_r_0/USER_LOGIC_I/read_address_6_3> 
+INFO:Xst:2260 - The FF/Latch <fft_axi4_r_0/USER_LOGIC_I/read_address_7> in Unit <fft_axi4_r_0> is equivalent to the following 3 FFs/Latches : <fft_axi4_r_0/USER_LOGIC_I/read_address_7_1> <fft_axi4_r_0/USER_LOGIC_I/read_address_7_2> <fft_axi4_r_0/USER_LOGIC_I/read_address_7_3> 
+INFO:Xst:2260 - The FF/Latch <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0> in Unit <fft_axi4_r_0> is equivalent to the following 71 FFs/Latches : <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_1> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_2> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_3> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_4> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_5> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_6> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_7> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_8> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_9>
+   <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_10> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_11> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_12> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_13> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_14> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_15> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_16> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_17> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_18> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_19> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_20>
+   <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_21> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_22> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_23> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_24> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_25> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_26> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_27> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_28> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_29> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_30> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_31>
+   <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_32> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_33> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_34> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_35> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_36> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_37> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_38> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_39> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_40> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_41> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_42>
+   <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_43> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_44> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_45> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_46> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_47> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_48> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_49> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_50> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_51> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_52> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_53>
+   <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_54> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_55> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_56> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_57> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_58> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_59> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_60> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_61> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_62> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_63> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_64>
+   <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_65> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_66> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_67> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_68> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_69> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_70> <fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0_71>
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 23812
+#      GND                         : 15
+#      INV                         : 165
+#      LUT1                        : 45
+#      LUT2                        : 1735
+#      LUT3                        : 722
+#      LUT4                        : 846
+#      LUT5                        : 8470
+#      LUT6                        : 7800
+#      MUXCY                       : 374
+#      MUXF7                       : 3150
+#      MUXF8                       : 144
+#      VCC                         : 8
+#      XORCY                       : 338
+# FlipFlops/Latches                : 11216
+#      FD                          : 2394
+#      FDC                         : 15
+#      FDE                         : 7924
+#      FDR                         : 124
+#      FDRE                        : 752
+#      FDS                         : 4
+#      FDSE                        : 3
+# RAMS                             : 195
+#      RAM64M                      : 160
+#      RAM64X1D                    : 32
+#      RAMB18E1                    : 3
+# Shift Registers                  : 155
+#      SRL16E                      : 144
+#      SRLC16E                     : 11
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 18
+#      IBUF                        : 4
+#      IOBUF                       : 4
+#      OBUF                        : 10
+# DSPs                             : 8
+#      DSP48E1                     : 8
+# Others                           : 1
+#      PS7                         : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z020clg484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:           11216  out of  106400    10%  
+ Number of Slice LUTs:                20642  out of  53200    38%  
+    Number used as Logic:             19783  out of  53200    37%  
+    Number used as Memory:              859  out of  17400     4%  
+       Number used as RAM:              704
+       Number used as SRL:              155
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:  25134
+   Number with an unused Flip Flop:   13918  out of  25134    55%  
+   Number with an unused LUT:          4492  out of  25134    17%  
+   Number of fully used LUT-FF pairs:  6724  out of  25134    26%  
+   Number of unique control sets:       220
+
+IO Utilization: 
+ Number of IOs:                         145
+ Number of bonded IOBs:                  18  out of    200     9%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                2  out of    140     1%  
+    Number using Block RAM only:          2
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+ Number of DSP48E1s:                      8  out of    220     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                    | Clock buffer(FF name)  | Load  |
+----------------------------------------------------------------+------------------------+-------+
+processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>| BUFG                   | 11597 |
+----------------------------------------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                     | Buffer(FF name)                                                                             | Load  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+-------+
+fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/i_xfft_v7_1/blk0000020c/blk0000023f/N0(fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/i_xfft_v7_1/blk0000020c/blk0000023f/XST_GND:G)| NONE(fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/i_xfft_v7_1/blk0000020c/blk0000023f/blk0000023f)| 6     |
+fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/i_xfft_v7_1/blk0000020c/blk00000240/N0(fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/i_xfft_v7_1/blk0000020c/blk00000240/XST_GND:G)| NONE(fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/i_xfft_v7_1/blk0000020c/blk00000240/blk00000240)| 6     |
+fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/i_xfft_v7_1/sig00000002(fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/i_xfft_v7_1/blk00000002:G)                                   | NONE(fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/i_xfft_v7_1/blk0000051a)                        | 6     |
+fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/i_xfft_v7_1/blk0000020c/blk0000023f/N1(fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/i_xfft_v7_1/blk0000020c/blk0000023f/XST_VCC:P)| NONE(fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/i_xfft_v7_1/blk0000020c/blk0000023f/blk0000023f)| 4     |
+fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/i_xfft_v7_1/blk0000020c/blk00000240/N1(fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/i_xfft_v7_1/blk0000020c/blk00000240/XST_VCC:P)| NONE(fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/i_xfft_v7_1/blk0000020c/blk00000240/blk00000240)| 4     |
+fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/i_xfft_v7_1/sig00000001(fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/i_xfft_v7_1/blk00000001:P)                                   | NONE(fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/i_xfft_v7_1/blk0000051a)                        | 4     |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 8.730ns (Maximum Frequency: 114.554MHz)
+   Minimum input arrival time before clock: 4.932ns
+   Maximum output required time after clock: 4.438ns
+   Maximum combinational path delay: 0.865ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>'
+  Clock period: 8.730ns (frequency: 114.554MHz)
+  Total number of paths / destination ports: 915345208 / 22226
+-------------------------------------------------------------------------
+Delay:               8.730ns (Levels of Logic = 16)
+  Source:            fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/noise_buf_128_411 (FF)
+  Destination:       fft_axi4_r_0/fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.READ_DATA_SM_I/S_AXI_RDATA_31 (FF)
+  Source Clock:      processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0> rising
+  Destination Clock: processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0> rising
+
+  Data Path: fft_axi4_r_0/fft_axi4_r_0/USER_LOGIC_I/noise_buf_128_411 to fft_axi4_r_0/fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.READ_DATA_SM_I/S_AXI_RDATA_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.282   0.753  fft_axi4_r_0/USER_LOGIC_I/noise_buf_128_411 (fft_axi4_r_0/USER_LOGIC_I/noise_buf_128<411>)
+     LUT6:I0->O            1   0.053   0.413  fft_axi4_r_0/USER_LOGIC_I/Mmux_read_address[7]_X_20_o_wide_mux_150_OUT86032_SW0_SW0 (N5716)
+     LUT6:I5->O            2   0.053   0.641  fft_axi4_r_0/USER_LOGIC_I/Mmux_read_address[7]_X_20_o_wide_mux_150_OUT86032_SW0 (N5080)
+     LUT6:I2->O            1   0.053   0.413  fft_axi4_r_0/USER_LOGIC_I/Mmux_read_address[7]_X_20_o_wide_mux_150_OUT86031_SW0 (N6471)
+     LUT6:I5->O            1   0.053   0.602  fft_axi4_r_0/USER_LOGIC_I/Mmux_read_address[7]_X_20_o_wide_mux_150_OUT86033_SW0 (N8318)
+     LUT6:I3->O            1   0.053   0.413  fft_axi4_r_0/USER_LOGIC_I/Mmux_read_address[7]_X_20_o_wide_mux_150_OUT86035 (fft_axi4_r_0/USER_LOGIC_I/Mmux_read_address[7]_X_20_o_wide_mux_150_OUT86034)
+     LUT6:I5->O            1   0.053   0.413  fft_axi4_r_0/USER_LOGIC_I/Mmux_read_address[7]_X_20_o_wide_mux_150_OUT86037 (fft_axi4_r_0/USER_LOGIC_I/Mmux_read_address[7]_X_20_o_wide_mux_150_OUT86036)
+     LUT6:I5->O            1   0.053   0.413  fft_axi4_r_0/USER_LOGIC_I/Mmux_read_address[7]_X_20_o_wide_mux_150_OUT86041 (fft_axi4_r_0/USER_LOGIC_I/Mmux_read_address[7]_X_20_o_wide_mux_150_OUT86040)
+     LUT6:I5->O            1   0.053   0.413  fft_axi4_r_0/USER_LOGIC_I/Mmux_read_address[7]_X_20_o_wide_mux_150_OUT86049 (fft_axi4_r_0/USER_LOGIC_I/Mmux_read_address[7]_X_20_o_wide_mux_150_OUT86048)
+     LUT6:I5->O            1   0.053   0.413  fft_axi4_r_0/USER_LOGIC_I/Mmux_read_address[7]_X_20_o_wide_mux_150_OUT86057 (fft_axi4_r_0/USER_LOGIC_I/Mmux_read_address[7]_X_20_o_wide_mux_150_OUT86056)
+     LUT6:I5->O            1   0.053   0.413  fft_axi4_r_0/USER_LOGIC_I/Mmux_read_address[7]_X_20_o_wide_mux_150_OUT86065 (fft_axi4_r_0/USER_LOGIC_I/Mmux_read_address[7]_X_20_o_wide_mux_150_OUT86064)
+     LUT6:I5->O            2   0.053   0.419  fft_axi4_r_0/USER_LOGIC_I/Mmux_read_address[7]_X_20_o_wide_mux_150_OUT86073 (fft_axi4_r_0/USER_LOGIC_I/Mmux_read_address[7]_X_20_o_wide_mux_150_OUT86072)
+     LUT6:I5->O            4   0.053   0.655  fft_axi4_r_0/USER_LOGIC_I/Mmux_read_address[7]_X_20_o_wide_mux_150_OUT86076 (fft_axi4_r_0/USER_LOGIC_I/read_address[7]_X_20_o_wide_mux_150_OUT<27>)
+     LUT6:I2->O            1   0.053   0.000  fft_axi4_r_0/USER_LOGIC_I/Mcompar_read_address[7]_read_address[7]_LessThan_149_o_cy<13>_SW1_G (N16721)
+     MUXF7:I1->O           1   0.217   0.485  fft_axi4_r_0/USER_LOGIC_I/Mcompar_read_address[7]_read_address[7]_LessThan_149_o_cy<13>_SW1 (N10219)
+     LUT5:I3->O           32   0.053   0.566  fft_axi4_r_0/USER_LOGIC_I/Mcompar_read_address[7]_read_address[7]_LessThan_149_o_cy<14> (fft_axi4_r_0/USER_LOGIC_I/read_address[7]_read_address[7]_LessThan_149_o)
+     LUT5:I4->O            1   0.053   0.000  fft_axi4_r_0/USER_LOGIC_I/Mmux_IP2Bus_Data110 (fft_axi4_r_0/user_IP2Bus_Data<0>)
+     FDRE:D                    0.011          fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.READ_DATA_SM_I/S_AXI_RDATA_0
+    ----------------------------------------
+    Total                      8.730ns (1.305ns logic, 7.425ns route)
+                                       (14.9% logic, 85.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>'
+  Total number of paths / destination ports: 1898 / 664
+-------------------------------------------------------------------------
+Offset:              4.932ns (Levels of Logic = 15)
+  Source:            processing_system7_0/processing_system7_0/PS7_i:MAXIGP0RREADY (PAD)
+  Destination:       fft_axi4_r_0/fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/DPHASE_TOUT_GEN.pend_dack_cnt_7 (FF)
+  Destination Clock: processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0> rising
+
+  Data Path: processing_system7_0/processing_system7_0/PS7_i:MAXIGP0RREADY to fft_axi4_r_0/fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/DPHASE_TOUT_GEN.pend_dack_cnt_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PS7:MAXIGP0RREADY     15   0.000   0.000  processing_system7_0/PS7_i (M_AXI_GP0_RREADY)
+     end scope: 'processing_system7_0:M_AXI_GP0_RREADY'
+     begin scope: 'axi_interconnect_1:S_AXI_RREADY<0>'
+     LUT5:I0->O           14   0.053   0.687  axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/mi_rready<3>1 (M_AXI_RREADY<3>)
+     end scope: 'axi_interconnect_1:M_AXI_RREADY<3>'
+     begin scope: 'fft_axi4_r_0:S_AXI_RREADY'
+     LUT6:I3->O            3   0.053   0.499  fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Mmux_rnw_cmb_dup12 (fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Mmux_rnw_cmb_dup1)
+     LUT5:I3->O           13   0.053   0.682  fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Mmux_rnw_cmb_dup113 (fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/rnw_cmb_int)
+     LUT3:I0->O            7   0.053   0.779  fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/Mmux_ored_ce_int11 (fft_axi4_r_0/AXI_SLAVE_BURST_I/ORed_CE)
+     LUT6:I0->O            7   0.053   0.453  fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/_n0398<1>1 (fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/_n0398<1>)
+     LUT2:I1->O            1   0.053   0.000  fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Maccum_DPHASE_TOUT_GEN.pend_dack_cnt_lut<1> (fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Maccum_DPHASE_TOUT_GEN.pend_dack_cnt_lut<1>)
+     MUXCY:S->O            1   0.291   0.000  fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Maccum_DPHASE_TOUT_GEN.pend_dack_cnt_cy<1> (fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Maccum_DPHASE_TOUT_GEN.pend_dack_cnt_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Maccum_DPHASE_TOUT_GEN.pend_dack_cnt_cy<2> (fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Maccum_DPHASE_TOUT_GEN.pend_dack_cnt_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Maccum_DPHASE_TOUT_GEN.pend_dack_cnt_cy<3> (fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Maccum_DPHASE_TOUT_GEN.pend_dack_cnt_cy<3>)
+     MUXCY:CI->O           1   0.015   0.000  fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Maccum_DPHASE_TOUT_GEN.pend_dack_cnt_cy<4> (fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Maccum_DPHASE_TOUT_GEN.pend_dack_cnt_cy<4>)
+     MUXCY:CI->O           1   0.015   0.000  fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Maccum_DPHASE_TOUT_GEN.pend_dack_cnt_cy<5> (fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Maccum_DPHASE_TOUT_GEN.pend_dack_cnt_cy<5>)
+     MUXCY:CI->O           0   0.015   0.000  fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Maccum_DPHASE_TOUT_GEN.pend_dack_cnt_cy<6> (fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Maccum_DPHASE_TOUT_GEN.pend_dack_cnt_cy<6>)
+     XORCY:CI->O           1   0.320   0.000  fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Maccum_DPHASE_TOUT_GEN.pend_dack_cnt_xor<7> (fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Result<7>1)
+     FDR:D                     0.011          fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/DPHASE_TOUT_GEN.pend_dack_cnt_7
+    ----------------------------------------
+    Total                      4.932ns (1.832ns logic, 3.100ns route)
+                                       (37.1% logic, 62.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>'
+  Total number of paths / destination ports: 331 / 77
+-------------------------------------------------------------------------
+Offset:              4.438ns (Levels of Logic = 8)
+  Source:            fft_axi4_r_0/fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0 (FF)
+  Destination:       processing_system7_0/processing_system7_0/PS7_i:MAXIGP0WREADY (PAD)
+  Source Clock:      processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0> rising
+
+  Data Path: fft_axi4_r_0/fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0 to processing_system7_0/processing_system7_0/PS7_i:MAXIGP0WREADY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            30   0.282   0.787  fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0 (fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.ADDRESS_DECODE_I/wrce_out_i_0)
+     LUT5:I1->O           23   0.053   0.742  fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/addr_timeout_int1 (fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/addr_timeout_int)
+     LUT3:I0->O            8   0.053   0.681  fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/IP2Bus_WrAck_data_timeout_int_OR_45_o1 (fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/IP2Bus_WrAck_data_timeout_int_OR_45_o)
+     LUT6:I2->O            2   0.053   0.641  fft_axi4_r_0/AXI_SLAVE_BURST_I/SUPPORT_RW_TRANSACTIONS.CONTROL_SM_I/Mmux_wready_cmb1 (S_AXI_WREADY)
+     end scope: 'fft_axi4_r_0:S_AXI_WREADY'
+     begin scope: 'axi_interconnect_1:M_AXI_WREADY<3>'
+     LUT6:I2->O            1   0.053   0.000  axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l3 (axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l)
+     MUXF7:I0->O           3   0.214   0.427  axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_5_8[0].mux_s2_inst (axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i)
+     LUT5:I4->O            1   0.053   0.399  axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/si_wready1 (DEBUG_SF_CB_WDATACONTROL<1>)
+     end scope: 'axi_interconnect_1:S_AXI_WREADY<0>'
+     begin scope: 'processing_system7_0:M_AXI_GP0_WREADY'
+    PS7:MAXIGP0WREADY          0.000          processing_system7_0/PS7_i
+    ----------------------------------------
+    Total                      4.438ns (0.761ns logic, 3.677ns route)
+                                       (17.1% logic, 82.9% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 133 / 131
+-------------------------------------------------------------------------
+Delay:               0.865ns (Levels of Logic = 3)
+  Source:            processing_system7_0/processing_system7_0/PS7_i:EMIOI2C0SDATN (PAD)
+  Destination:       processing_system7_0_I2C0_SDA (PAD)
+
+  Data Path: processing_system7_0/processing_system7_0/PS7_i:EMIOI2C0SDATN to processing_system7_0_I2C0_SDA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PS7:EMIOI2C0SDATN      1   0.000   0.399  processing_system7_0/PS7_i (processing_system7_0/I2C0_SDA_T_n)
+     INV:I->O              1   0.067   0.399  processing_system7_0/I2C0_SDA_T1_INV_0 (I2C0_SDA_T)
+     end scope: 'processing_system7_0:I2C0_SDA_T'
+     IOBUF:T->IO               0.000          iobuf_0 (processing_system7_0_I2C0_SDA)
+    ----------------------------------------
+    Total                      0.865ns (0.067ns logic, 0.798ns route)
+                                       (7.7% logic, 92.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>
+----------------------------------------------------------------+---------+---------+---------+---------+
+                                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------------------------+---------+---------+---------+---------+
+processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>|    8.730|         |         |         |
+----------------------------------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 49.00 secs
+Total CPU time to Xst completion: 49.53 secs
+ 
+--> 
+
+Total memory usage is 581636 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :  442 (   0 filtered)
+

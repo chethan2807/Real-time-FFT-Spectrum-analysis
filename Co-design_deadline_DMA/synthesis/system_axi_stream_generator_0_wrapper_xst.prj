@@ -1,0 +1,3 @@
+verilog axi_stream_generator_v1_00_a D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\Backup\FFT_DMA\pcores\axi_stream_generator_v1_00_a/hdl/verilog/xfft_v8_0.v
+verilog axi_stream_generator_v1_00_a D:\STUDIES\NTU_PROJECTS\EMBEDDED_SYSTEM_DESIGN\FFT_HARDWARE_PROJ\Backup\FFT_DMA\pcores\axi_stream_generator_v1_00_a/hdl/verilog/axi_stream_generator.v
+verilog work ../hdl/system_axi_stream_generator_0_wrapper.v

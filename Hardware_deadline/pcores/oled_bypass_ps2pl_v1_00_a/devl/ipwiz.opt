@@ -1,0 +1,8 @@
+-batch 
+-create oled_bypass_ps2pl 
+-ver 1.00.a 
+-dir "D:\Dropbox\zed_mic_oled" 
+-lang vhdl 
+-bus axi4lite s 
+-reg 1 
+-xps 
